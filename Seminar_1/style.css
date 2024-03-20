@@ -1,0 +1,51 @@
+a {
+  text-decoration: none;
+}
+.nav_link {
+  color: cornflowerblue;
+  font-size: 16px;
+  line-height: 20px;
+}
+.title {
+  color: #222222;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #7d3087;
+}
+.subtitle {
+  color: coral;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 80px;
+}
+.pic {
+  border-radius: 10px;
+}
+.form__input {
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: sans-serif;
+}
+.form__btn {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.body {
+  font-family: sans-serif;
+}
