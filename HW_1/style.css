@@ -7,7 +7,7 @@ a {
   line-height: 20px;
 }
 .title {
-  color: #222222;
+  color: #3aaab2;
   font-size: 28px;
   line-height: 36px;
   font-weight: bold;
@@ -17,7 +17,7 @@ a {
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
-  color: #7d3087;
+  color: #706b7c;
 }
 .subtitle {
   color: coral;
@@ -26,26 +26,9 @@ a {
   font-size: 36px;
   line-height: 80px;
 }
-.pic {
-  border-radius: 10px;
-}
-.form__input {
-  width: 200px;
-  height: 30px;
-  outline: none;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  font-size: 14px;
+.strong {
+  color: #148556;
+  font-style: normal;
+  font-size: 20px;
   line-height: 30px;
-  font-family: sans-serif;
-}
-.form__btn {
-  width: 100px;
-  height: 30px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-}
-.body {
-  font-family: sans-serif;
 }
