@@ -8,15 +8,13 @@ body {
   color: rgb(255, 255, 255);
   
 }
-.flex {
+.center__flex {
   display: flex;
   justify-content: center;
 }
-.flex__top {
+.sb__flex {
   display: flex;
-  justify-content: center;
-  width: 1146px;
-  margin: 0 auto;
+  justify-content: space-between;
 }
 .top {
   padding-bottom: 99px;
@@ -31,11 +29,13 @@ body {
 .top__content {
   margin-top: 160px;
   margin-bottom: 197px;
-  display: flex;
-  flex-direction: row-reverse;
-  gap: 128px;
+}
+.container {
+  max-width: 1146px;
+  margin: 0 auto;
 }
 .top__info {
+  width: 44%;
 }
 .subtitle {
   margin-bottom: 10px;
@@ -58,18 +58,26 @@ body {
 font-size: 18px;
 font-weight: 600;
 line-height: 160%;
-}
-.top__btns {
-  margin-top: 50px;
+margin-bottom: 50px;
 }
 .button {
   border-radius: 5px;
   background: rgb(58, 104, 184);
   color: #fff;
-  padding: 1rem 2rem;
-  text-align: center;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+  /* transition пишется в основном селекторе, чтобы свойство срабатывало и в момент наведения и в момент, когда курсор убирается с кнопки, иначе правильно будет срабатывать только в момент наведения */
 }
-.top__logo {
-  display: flex;
-  gap: 72px;
+.button1 {
+  margin-right: 20px;
+}
+  .button:hover { 
+  color: rgb(58, 104, 184);
+  background-color: rgb(2, 10, 24);
+  border: 2px solid rgb(58, 104, 184);
+}
+.fa {
+  margin-right: 10px;
 }
