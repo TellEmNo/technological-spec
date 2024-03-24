@@ -16,6 +16,18 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.award__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.award__grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 362px 362px 362px;
+  justify-content: center;
+}
 .header__link {
   color: rgb(255, 255, 255);
   padding: 39px 20px;
@@ -110,22 +122,27 @@ body {
   align-items: flex-start;
   padding: 15px 30px 15px 30px;
 }
-.award__flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 .awards {
   border-radius: 10px;
   background: #132035;
-  width: 31.58%;
 }
 .award__img {
   margin: 30px auto;
 }
+.big__award {
+  grid-area: 2 / 1 / 4 / 3;
+}
+.award__img__big {
+  margin: 30px auto 60px;
+}
+.award__text__big {
+  margin: 60px 30px 144px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 160%;
+}
 .award__title {
-  width: 70%;
   margin: 0 30px;
   font-size: 25px;
   font-weight: 700;
