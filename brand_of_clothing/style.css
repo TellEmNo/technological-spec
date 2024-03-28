@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: Lato;
+}
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+.header {
+  background: rgb(34, 34, 34);
+  padding: 18px 231px 19px 240px;
+}
+.nav {
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+}
+.lift__side {
+  display: flex;
+  gap: 41px;
+}
+.search {
+  margin: 11px 0 1px;
+  width: 26px;
+  height: 26.79px;
+}
+.right__side {
+  display: flex;
+  gap: 33px;
+  margin: 8px 0 1px 0;
+}
+.menu {
+  margin-top: 6px;
+}
+.profile {
+}
+.shopping__cart {
+}
+.top__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: rgb(241, 228, 230);
+}
+.top__img {
+  margin-right: 63.5px;
+}
+.brand {
+  margin: 290px 324px 380px 0;
+}
+.offer__nav {
+  background: rgb(229, 229, 229);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.offer {
+  width: 1140px;
+  padding: 65px 230px 96px;
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  gap: 30px;
+}
+.offer__img {
+  background: rgba(33, 22, 22, 0.7);
+}
+.offer__content {
+  background: rgb(229, 229, 229);
+}
+.offer__items {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  column-gap: 30px;
+  row-gap: 25px;
+}
+.offer__heading {
+  text-align: center;
+  color: rgb(34, 34, 34);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.offer__text {
+  text-align: center;
+  color: rgb(159, 159, 159);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  margin: 6px auto 48px;
+}
+.item {
+  background: rgb(248, 248, 248);
+  width: 360px;
+}
+.item__img {
+  margin-bottom: 24px;
+}
+.item__title {
+  margin-left: 16px;
+  width: 25%;
+  color: rgb(0, 0, 0);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.item__text{
+  margin-bottom: 16px;
+  width: 80%;
+  margin-left: 16px;
+  color: rgb(93, 93, 93);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  text-align: left;
+}
+.price {
+  width: 1%;
+  margin-left: 16px;
+  color: rgb(241, 109, 127);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: left;
+}
+.browse_btn {
+  margin: 48px 464px 65px;
+  color: rgb(242, 99, 118);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  padding: 1rem 2rem;
+  border: 1px solid rgb(242, 99, 118);
+}
+.browse_btn:hover { 
+  color: rgb(248, 248, 248);
+  background-color: rgb(242, 99, 118);
+  border: 1px solid rgb(248, 248, 248);
+}
