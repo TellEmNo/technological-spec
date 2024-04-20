@@ -518,6 +518,10 @@ body {
 .media-4 {
   padding: 0.45rem 0.483rem 0.55rem;
 }
+.hidden {
+  display: none;
+  width: 0;
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 376px);
