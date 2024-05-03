@@ -1,0 +1,45 @@
+@import "vars";
+@import "mixins";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+.container {
+  width: $widthSite;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.color_span {
+  color: $textSite;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: $gapSite;
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.content {
+  @include displayFlex(flex, wrap, center, center);
+  gap: $gapSite;
+
+  &__item {
+    width: $widthSite / 4;
+    height: 200px;
+    border: $borderStyle;
+  }
+}
