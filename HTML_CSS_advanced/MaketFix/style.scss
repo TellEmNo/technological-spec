@@ -54,6 +54,10 @@ a {
   color: $blackText;
 }
 
+.brand-link {
+  color: $blackText;
+}
+
 .color-span {
   font-weight: 900;
   color: $colorSite;
@@ -68,6 +72,7 @@ a {
   border: 1px solid $headerBorderColor;
   border-radius: 3px 0px 0px 3px;
   cursor: pointer;
+  transition: all 0.2s;
 
   &__text {
     font-size: 14px;
@@ -76,6 +81,10 @@ a {
     letter-spacing: 0.025em;
     color: $blackText;
   }
+}
+
+.btn-browse:hover {
+  color: $colorSite;
 }
 
 .search {
@@ -129,8 +138,9 @@ a {
   margin-top: 6px;
   margin-bottom: 7px;
   background-color: $colorSite;
-  border: 0;
+  border: 0.5px solid $whiteColor;
   cursor: pointer;
+  transition: all 0.2s;
 
   &__text {
     font-size: 15px;
@@ -139,6 +149,12 @@ a {
     letter-spacing: 0.025em;
     color: $whiteColor;
   }
+}
+
+.btn-my-acc:hover {
+  color: $colorSite;
+  background-color: $whiteColor;
+  border: 0.5px solid $colorSite;
 }
 
 .nav {
@@ -239,6 +255,16 @@ a {
     width: 560px;
   }
 
+  &__link {
+    position: relative;
+    z-index: 1;
+    transition: all 0.2s;
+  }
+
+  &__link:hover {
+    transform: scale(1.02);
+  }
+
   &__text {
     display: flex;
     flex-direction: column;
@@ -261,24 +287,28 @@ a {
 
   &__text1 {
     top: 26px;
+    left: -2px;
     width: 175px;
     height: 82px;
   }
 
   &__text2 {
-    top: 591px;
+    top: 26px;
+    left: -2px;
     width: 225px;
     height: 82px;
   }
 
   &__text3 {
     top: 26px;
+    left: -2px;
     width: 162px;
     height: 82px;
   }
 
   &__text4 {
-    top: 310px;
+    top: 26px;
+    left: -2px;
     width: 180px;
     height: 82px;
   }
@@ -334,7 +364,7 @@ a {
     font-weight: 700;
     letter-spacing: 0.025em;
     border: 1px solid rgb(242, 99, 118);
-    transition: all 0.4s;
+    transition: all 0.2s;
   }
 
   &__browse-btn:hover {
@@ -426,7 +456,6 @@ a {
   height: 438px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 
   &__item {
     margin-top: 111px;
@@ -475,21 +504,24 @@ a {
   width: 48.855%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 148px;
   row-gap: 35px;
 
   &__heading {
     color: $subscribe-boxColorText;
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: none;
     font-weight: 400;
-    line-height: 167.2%;
+    // line-height: 167.2%;
     text-align: center;
+    margin-left: 54px;
   }
 
   &__text {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
   }
 
   &__email-p {
@@ -511,20 +543,156 @@ a {
   }
 
   &__btn {
-    background: rgb(241, 109, 127);
-    color: rgb(255, 255, 255);
+    background: $colorSite;
+    color: $whiteColor;
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
-    border: 1px solid #f16d7f;
+    border: 1px solid $colorSite;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     padding: 0.5rem 1rem;
-    transition: all 0.4s;
+    transition: all 0.2s;
   }
   &__btn:hover {
-    color: #f16d7f;
+    color: $colorSite;
     background: #eae7e7;
-    border: 0.5px solid #f16d7f;
+    border: 0.5px solid $colorSite;
+  }
+}
+
+.info-box {
+  display: flex;
+  padding-top: 109px;
+  padding-left: 228px;
+  padding-bottom: 89px;
+
+  &__logo-img {
+    margin-left: 0;
+  }
+}
+
+.brand-description {
+  display: flex;
+  flex-direction: column;
+  margin-right: 64px;
+
+  &__logo {
+    margin-bottom: 41px;
+    display: flex;
+  }
+
+  &__div-text {
+    width: 427px;
+    height: 180px;
+    padding-right: 17px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  &__div-text::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  &__content {
+    width: 100%;
+    padding-right: 17px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: $brandDescriptionColor;
+  }
+
+  &__footer-nav {
+    display: flex;
+  }
+
+  &__column-nav {
+    margin-top: 14px;
+  }
+
+  &__column-nav1 {
+    margin-right: 129px;
+  }
+
+  &__column-nav2 {
+    margin-right: 80px;
+  }
+
+  &__heading {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: $colorSite;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    color: $brandDescriptionColor;
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+  }
+}
+
+.copyright-box {
+  background: $headerBorderColor;
+  display: flex;
+  padding: 24px 14.75% 23px;
+
+  &__text {
+    width: 36.444vh;
+    margin-right: 56.8%;
+    margin-top: 6px;
+    color: #7a7a7a;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+  }
+  &__s-media {
+    display: flex;
+  }
+  &__media {
+    display: flex;
+    background-color: $whiteColor;
+    color: #b2b2b2;
+    transition: all 0.2s;
+  }
+  &__media:hover {
+    color: $whiteColor;
+    background: $colorSite;
+  }
+  &__media-1 {
+    padding: 0.45rem 0.67rem 0.55rem;
+    margin-right: 5.906%;
+  }
+  &__media-2 {
+    padding: 0.45rem 0.546rem 0.55rem;
+    margin-right: 5.906%;
+  }
+  &__media-3 {
+    padding: 0.45rem 0.608rem 0.55rem;
+    margin-right: 5.906%;
+  }
+  &__media-4 {
+    padding: 0.45rem 0.483rem 0.55rem;
+    margin-right: 5.906%;
+  }
+  &__media-5 {
+    padding: 0.45rem 0.4rem 0.55rem;
   }
 }
