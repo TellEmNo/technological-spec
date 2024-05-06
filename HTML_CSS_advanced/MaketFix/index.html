@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
@@ -27,11 +27,34 @@
             >bran<span class="color-span">d</span></a
           >
         </p>
-        <p class="btn-browse__text">
-          <button class="btn-browse" type="button">
-            Browse &nbsp;<i class="fa fa-solid fa-caret-down"></i>
-          </button>
-        </p>
+        <details class="header-browse-details">
+          <summary class="btn-browse">
+            <p class="btn-browse__text">
+              Browse &nbsp;<i class="fa fa-solid fa-caret-down"></i>
+            </p>
+          </summary>
+          <div class="btn-browse__box">
+            <h3 class="btn-browse__title">women</h3>
+            <a href="#" class="btn-browse__link">Dresses</a>
+            <a href="#" class="btn-browse__link">Tops</a>
+            <a href="#" class="btn-browse__link">Sweaters/Knits</a>
+            <a href="#" class="btn-browse__link">Jackets/Coats</a>
+            <a href="#" class="btn-browse__link">Blazers</a>
+            <a href="#" class="btn-browse__link">Denim</a>
+            <a href="#" class="btn-browse__link">Leggings/Pants</a>
+            <a href="#" class="btn-browse__link">Skirts/Shorts</a>
+            <a href="#" class="btn-browse__link btn-browse__last-of-type"
+              >Accessories
+            </a>
+            <h3 class="btn-browse__title">man</h3>
+            <a href="#" class="btn-browse__link">Tees/Tank tops</a>
+            <a href="#" class="btn-browse__link">Shirts/Polos</a>
+            <a href="#" class="btn-browse__link">Sweaters</a>
+            <a href="#" class="btn-browse__link">Sweatshirts/Hoodies</a>
+            <a href="#" class="btn-browse__link">Blazers</a>
+            <a href="#" class="btn-browse__link">Jackets/vests</a>
+          </div>
+        </details>
         <form class="search">
           <p>
             <input
@@ -49,23 +72,321 @@
             src="/MaketFix/img/cart.png"
             alt="shopping cart"
         /></a>
-        <p class="btn-my-acc__text">
-          <button class="btn-my-acc" type="button">
-            My Account &nbsp;<i class="fa fa-solid fa-caret-down"></i>
-          </button>
-        </p>
+        <details class="header-acc-details">
+          <summary class="btn-my-acc">
+            <p class="btn-my-acc__text">
+              My Account &nbsp;<i class="fa fa-solid fa-caret-down"></i>
+            </p>
+          </summary>
+          <div class="btn-my-acc__box">
+            <article class="btn-my-acc__cart-item">
+              <h1 class="hidden"></h1>
+              <a href="#" class="btn-my-acc__product-link">
+                <img
+                class="btn-my-acc__cart-img"
+                src="/MaketFix/img/cart_man.png"
+                alt="product"
+              />
+              </a>
+              <div class="btn-my-acc__product-info">
+                <p class="btn-my-acc__product-name"><a class="btn-my-acc__product-name-link" href="#">Rebox Zane</a></p>
+                <p class="btn-my-acc__fa-stars">
+                  <i class="fa fa-solid fa-star f123"></i>
+                  <i class="fa fa-solid fa-star f123"></i>
+                  <i class="fa fa-solid fa-star f123"></i>
+                  <i class="fa fa-solid fa-star f123"></i>
+                  <i class="fa fa-solid fa-star-half-stroke fa-star"></i>
+                </p>
+                <p class="btn-my-acc__amount-and-price">
+                  1 <span class="btn-my-acc__x">x</span> $250
+                </p>
+              </div>
+              <p class="btn-my-acc__delete-drod">
+                <i class="fa-solid fa-circle-xmark"></i>
+              </p>
+            </article>
+            <article class="btn-my-acc__cart-item">
+              <h1 class="hidden"></h1>
+              <a href="#" class="btn-my-acc__product-link">
+                <img
+                class="btn-my-acc__cart-img"
+                src="/MaketFix/img/cart_women.png"
+                alt="product"
+              />
+              </a>
+              <div class="btn-my-acc__product-info">
+                <p class="btn-my-acc__product-name"><a class="btn-my-acc__product-name-link" href="#">Rebox Zane</a></p>
+                <p class="btn-my-acc__fa-stars">
+                  <i class="fa fa-solid fa-star f123"></i>
+                  <i class="fa fa-solid fa-star f123"></i>
+                  <i class="fa fa-solid fa-star f123"></i>
+                  <i class="fa fa-solid fa-star f123"></i>
+                  <i class="fa fa-solid fa-star-half-stroke fa-star"></i>
+                </p>
+                <p class="btn-my-acc__amount-and-price">
+                  1 <span class="btn-my-acc__x">x</span> $250
+                </p>
+              </div>
+              <p class="btn-my-acc__delete-drod">
+                <i class="fa-solid fa-circle-xmark"></i>
+              </p>
+            </article>
+            <div class="btn-my-acc__total-price">
+              <p class="btn-my-acc__total-price-text">total</p>
+              <p class="btn-my-acc__total-price-text">$500</p>
+            </div>
+            <a href="#" class="btn-my-acc__checkout-link">checkout</a>
+            <a href="#" class="btn-my-acc__cart-link">go to cart</a>
+          </div>
+        </details>
       </header>
       <nav class="nav center">
         <ul class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Man</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Women</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Kids</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Man</a>
+            <div class="mega-box">
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">women</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+                <a href="#" class="mega-box__link">Blazers</a>
+                <a href="#" class="mega-box__link">Denim</a>
+                <a href="#" class="mega-box__link">Leggings/Pants</a>
+                <a href="#" class="mega-box__link">Skirts/Shorts</a>
+                <a href="#" class="mega-box__link">Accessories </a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Tees/Tank tops</a>
+                <a href="#" class="mega-box__link">Shirts/Polos</a>
+                <a href="#" class="mega-box__link">Sweaters</a>
+                <a href="#" class="mega-box__link">Sweatshirts/Hoodies</a>
+                <a href="#" class="mega-box__link">Blazers</a>
+                <a href="#" class="mega-box__link">Jackets/vests</a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <div class="mega-box__img-box">
+                  <a href="#" class="mega-box__img-link">
+                    <img
+                      class="mega-box__img"
+                      src="/MaketFix/img/mega_menu_img.png"
+                      alt="menu banner"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Women</a>
+            <div class="mega-box">
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+                <a href="#" class="mega-box__link">Blazers</a>
+                <a href="#" class="mega-box__link">Denim</a>
+                <a href="#" class="mega-box__link">Leggings/Pants</a>
+                <a href="#" class="mega-box__link">Skirts/Shorts</a>
+                <a href="#" class="mega-box__link">Accessories </a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+                <div class="mega-box__img-box">
+                  <a href="#" class="mega-box__img-link">
+                    <img
+                      class="mega-box__img"
+                      src="/MaketFix/img/mega_menu_img.png"
+                      alt="menu banner"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Kids</a>
+            <div class="mega-box">
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+                <a href="#" class="mega-box__link">Blazers</a>
+                <a href="#" class="mega-box__link">Denim</a>
+                <a href="#" class="mega-box__link">Leggings/Pants</a>
+                <a href="#" class="mega-box__link">Skirts/Shorts</a>
+                <a href="#" class="mega-box__link">Accessories </a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+                <div class="mega-box__img-box">
+                  <a href="#" class="mega-box__img-link">
+                    <img
+                      class="mega-box__img"
+                      src="/MaketFix/img/mega_menu_img.png"
+                      alt="menu banner"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
           <li class="nav__item">
             <a href="#" class="nav__link">Accessories</a>
+            <div class="mega-box">
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+                <a href="#" class="mega-box__link">Blazers</a>
+                <a href="#" class="mega-box__link">Denim</a>
+                <a href="#" class="mega-box__link">Leggings/Pants</a>
+                <a href="#" class="mega-box__link">Skirts/Shorts</a>
+                <a href="#" class="mega-box__link">Accessories </a>
+                <div class="mega-box__img-box">
+                  <a href="#" class="mega-box__img-link">
+                    <img
+                      class="mega-box__img"
+                      src="/MaketFix/img/mega_menu_img.png"
+                      alt="menu banner"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
           </li>
-          <li class="nav__item"><a href="#" class="nav__link">Featured</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Hot deals</a></li>
+          <li class="nav__item nav__last">
+            <a href="#" class="nav__link">Featured</a>
+            <div class="mega-box">
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+                <a href="#" class="mega-box__link">Blazers</a>
+                <a href="#" class="mega-box__link">Denim</a>
+                <a href="#" class="mega-box__link">Leggings/Pants</a>
+                <a href="#" class="mega-box__link">Skirts/Shorts</a>
+                <a href="#" class="mega-box__link">Accessories </a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+                <div class="mega-box__img-box">
+                  <a href="#" class="mega-box__img-link">
+                    <img
+                      class="mega-box__img"
+                      src="/MaketFix/img/mega_menu_img.png"
+                      alt="menu banner"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav__item nav__last">
+            <a href="#" class="nav__link">Hot deals</a>
+            <div class="mega-box">
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+                <a href="#" class="mega-box__link">Blazers</a>
+                <a href="#" class="mega-box__link">Denim</a>
+                <a href="#" class="mega-box__link">Leggings/Pants</a>
+                <a href="#" class="mega-box__link">Skirts/Shorts</a>
+                <a href="#" class="mega-box__link">Accessories </a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+              </div>
+              <div class="mega-box__item">
+                <h3 class="mega-box__title">man</h3>
+                <a href="#" class="mega-box__link">Dresses</a>
+                <a href="#" class="mega-box__link">Tops</a>
+                <a href="#" class="mega-box__link">Sweaters/Knits</a>
+                <a href="#" class="mega-box__link">Jackets/Coats</a>
+                <div class="mega-box__img-box">
+                  <a href="#" class="mega-box__img-link">
+                    <img
+                      class="mega-box__img"
+                      src="/MaketFix/img/mega_menu_img.png"
+                      alt="menu banner"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </nav>
     </div>
@@ -211,11 +532,11 @@
         <section class="subscribe">
           <h2 class="hidden">text</h2>
           <!-- <div class="subscribe__div-heading"> -->
-            <h2 class="subscribe__heading">
-              <span class="subscribe__text"><b>SUBSCRIBE</b></span
-              ><br />
-              FOR OUR NEWLETTER AND PROMOTION
-            </h2>
+          <h2 class="subscribe__heading">
+            <span class="subscribe__text"><b>SUBSCRIBE</b></span
+            ><br />
+            FOR OUR NEWLETTER AND PROMOTION
+          </h2>
           <!-- </div> -->
           <form action="#">
             <p class="subscribe__email-p">
@@ -281,7 +602,9 @@
         </section>
         <section class="brand-description__footer-nav">
           <h2 class="hidden"></h2>
-          <div class="brand-description__column-nav brand-description__column-nav1">
+          <div
+            class="brand-description__column-nav brand-description__column-nav1"
+          >
             <h3 class="brand-description__heading">
               <span class="color-span">company</span>
             </h3>
@@ -307,7 +630,9 @@
               </li>
             </ul>
           </div>
-          <div class="brand-description__column-nav brand-description__column-nav2">
+          <div
+            class="brand-description__column-nav brand-description__column-nav2"
+          >
             <h3 class="brand-description__heading">
               <span class="color-span">information</span>
             </h3>
@@ -380,7 +705,8 @@
             ><i class="fa fa-brands fa-twitter"></i
           ></a>
           <a href="#" class="copyright-box__media copyright-box__media-5"
-            ><i class="fa-brands fa-google-plus-g"></i></a>
+            ><i class="fa-brands fa-google-plus-g"></i
+          ></a>
         </div>
       </section>
     </footer>
