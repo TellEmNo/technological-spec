@@ -69,10 +69,11 @@
 
 .content-box {
   position: relative;
-  padding-top: 763px;
+  padding-top: 805px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .caption {
@@ -83,6 +84,10 @@
   color: $colorCaption;
   margin-bottom: 72px;
   text-align: center;
+}
+
+#s-p-product-box.product-box {
+  width: $secondWidthSite;
 }
 
 .s-p-item-description {
@@ -127,7 +132,8 @@
   border: 1px solid $model-boxBorder;
   position: absolute;
   top: -47px;
-  margin: 0 12.09% 0 12.09%;
+
+  margin-bottom: 119px;
 }
 
 #s-p-add-box.add-box {
