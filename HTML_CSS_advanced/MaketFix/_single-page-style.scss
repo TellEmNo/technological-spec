@@ -4,29 +4,42 @@
 }
 
 .breadcrumbs {
+  width: $secondWidthSite;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-}
 
-.breadcrumbs-title {
-  font-size: 24px;
-  line-height: 20px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: $colorSite;
-}
+  &__title {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $colorSite;
+  }
 
-.breadcrumbs-text {
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: $breadcrumbsText;
-}
+  &__ul {
+    list-style: none;
+    display: flex;
+  }
 
-.color-span.bc-color-span {
-  font-weight: 700;
+  &__li:not(:last-child)::after {
+    content: "/";
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  &__link {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $breadcrumbsText;
+
+    &_highlighted {
+      font-weight: 900;
+      color: $colorSite;
+    }
+  }
 }
 
 .model-box {

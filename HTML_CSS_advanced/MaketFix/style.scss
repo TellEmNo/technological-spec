@@ -1,6 +1,7 @@
 @import "vars";
 @import "mixins";
 @import "single-page-style";
+@import "product-style";
 
 * {
   margin: 0;
@@ -74,7 +75,7 @@ a {
 
 .btn-browse {
   width: 87px;
-  height: 37px;
+  height: 36px;
   background-color: #cdcdcc;
   background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
   border: 1px solid $headerBorderColor;
@@ -117,7 +118,7 @@ a {
   &__title {
     font-size: 14px;
     line-height: 32px;
-    font-weight: 400;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.025em;
     color: $blackText;
@@ -136,6 +137,10 @@ a {
 
     &:last-of-type {
       margin-bottom: 0;
+    }
+
+    &:hover {
+      color: $colorSite;
     }
   }
 
@@ -185,12 +190,15 @@ summary {
   color: $grayText;
 }
 
-.cart-link {
+.img-cart-link {
   width: 32px;
   height: 29px;
   margin-top: 15px;
   margin-bottom: 7px;
   margin-right: 26px;
+  position: absolute;
+  top: -9px;
+  right: 114px;
 }
 
 .btn-my-acc {
@@ -225,12 +233,13 @@ summary {
     flex-direction: column;
     position: absolute;
     top: 90px;
-    right: 305px;
+    right: 365px;
     box-sizing: border-box;
     background-color: $whiteColor;
   }
 
   &__text {
+    position: relative;
     font-size: 15px;
     line-height: 32px;
     font-weight: 400;
@@ -372,9 +381,8 @@ summary {
   background-color: $whiteColor;
   &__list {
     list-style-type: none;
-    margin-left: 420px;
+    margin-left: 450px;
     display: flex;
-    gap: 40px;
   }
 
   &__item {
@@ -390,8 +398,7 @@ summary {
   &__link {
     position: relative;
     z-index: 1;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 20px;
     color: $blackText;
     font-size: 14px;
     line-height: 26px;
@@ -488,14 +495,17 @@ summary {
   }
 }
 
-.brand-box {
-  position: relative;
-  width: $widthSite;
-  height: 665px;
+.header-brand-box {
   background-color: #e8e8e8;
   background-image: url("/MaketFix/img/brand_img.png");
   background-position: center center;
   background-size: cover;
+}
+
+.brand-box {
+  position: relative;
+  width: $widthSite;
+  height: 665px;
 }
 
 .rectangle {
@@ -841,10 +851,15 @@ summary {
   flex-direction: column;
 }
 
-.subscribe-box {
+.footer-subscribe-box {
+  background-color: rgba(242,242,242,0.5);
   background-image: url("/MaketFix/img/photo_subscribe.png");
   background-position: center center;
   background-size: cover;
+}
+
+.subscribe-box {
+  width: $widthSite;
   height: 438px;
   display: flex;
   flex-direction: row;
@@ -852,11 +867,12 @@ summary {
   &__item {
     margin-top: 111px;
     margin-left: 230px;
+    margin-left: 14.53%;
+    margin-right: 165px;
     width: 35%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-right: 165px;
     row-gap: 5px;
   }
 
@@ -866,6 +882,7 @@ summary {
   }
 
   &__text {
+    width: 390px;
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
@@ -1040,8 +1057,11 @@ summary {
   }
 }
 
-.copyright-box {
+.footer-copyright-box {
   background: $headerBorderColor;
+}
+
+.copyright-box {
   display: flex;
   padding: 24px 14.75% 23px;
 
