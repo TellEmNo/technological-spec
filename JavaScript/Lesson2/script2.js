@@ -100,40 +100,40 @@
 // Создать переменные num1, num2 которые пользователь вводит с клавиатуры
 // Проверьте, что переменная num1 равна или меньше 1, а переменная num2 больше или равна 3.
 
-// let num1 = prompt('Enter a first number ', 0);
-// let num2 = prompt('Enter a second number ', 0);
-// if (isNaN(num1) || isNaN(num2)) {
-//   console.log('Error. Enter a number');
-// } else {
-//   console.log(`${(num1 <= 1 && num2 >= 3) ? 'condition is satisfied' : 'Condition is not satisfied'}`);
-// }
+let num1 = prompt('Enter a first number ', 0);
+let num2 = prompt('Enter a second number ', 0);
+if (isNaN(num1) || isNaN(num2)) {
+  console.log('Error. Enter a number');
+} else {
+  console.log(`${(num1 <= 1 && num2 >= 3) ? 'condition is satisfied' : 'Condition is not satisfied'}`);
+}
 
 // Задание 2
 // Перепишите код к тернарному оператору
 
-// let test = true;
-// if (test === true) {
-// console.log('+++');
-// } else {
-// console.log('---');
-// }
+let test = true;
+if (test === true) {
+console.log('+++');
+} else {
+console.log('---');
+}
 
-// console.log(`${(test === true) ? '+++' : '---'}`);
+console.log(`${(test === true) ? '+++' : '---'}`);
 
 // Задание 3
 // В переменной day лежит какое-то число из интервала от 1 до 31. Определите в какую декаду месяца попадает это число (в первую, вторую или третью).
 
 // let day = prompt('Enter a number between 1 to 31', 1)
 
-// if (isNaN(day) && day < 1 && day > 31) {
-//   console.log('Error. Something went wrong' );
-// } else if (day <= 10) {
-//   console.log('first decade of the month');
-// } else if (day <= 20) {
-//   console.log('second decade of the month');
-// } else {
-//   console.log('third decade of the month');
-// }
+if (isNaN(day) || day < 1 || day > 31) {
+  console.log('Error. Something went wrong' );
+} else if (day <= 10) {
+  console.log('first decade of the month');
+} else if (day <= 20) {
+  console.log('second decade of the month');
+} else {
+  console.log('third decade of the month');
+}
 
 // Задание 4
 // Необходимо от пользователя получить число.
