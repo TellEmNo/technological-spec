@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #411313;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+figure {
+  border: 2px solid rgb(43, 3, 3);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px;
+  max-width: 320px;
+  margin: auto;
+}
+
+.img {
+  width: 320px;
+}/*# sourceMappingURL=style.css.map */
