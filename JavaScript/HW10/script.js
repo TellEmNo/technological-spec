@@ -11,12 +11,12 @@ async function getData(url) {
   const jsonData = await response.json();
   return jsonData;
 }
-async function main() { //почему-то не вышло, как на уроке, выдает ошибку, что нельзя использовать await вне асинхронной функции
-  try {
-    const myData = await getData(url);
-    console.log(myData);
-    myData.forEach(elm => {
-      divEl.insertAdjacentHTML('beforeend', `
+async function main() { // Чтобы работало вне асинхронной функции, нужно дописать параметр type="module" в подключаемый скрипт файл.
+try {
+  const myData = await getData(url);
+  console.log(myData);
+  myData.forEach(elm => {
+    divEl.insertAdjacentHTML('beforeend', `
         <figure>
         <img class="img" src="https://t.ctcdn.com.br/DSjFGCs4CprGpViQbmL1fj-nyw4=/1200x675/smart/i350335.jpeg" alt="Картинок нет:("></img>
         <h2>${elm.name}</h2>
@@ -24,9 +24,9 @@ async function main() { //почему-то не вышло, как на уро�
         <p>Дата выпуска: ${elm.released.slice(0, 10)}</p>
         </figure>
         `)
-    })
-  } catch (error) {
-    console.error(`Ошибка: ${error}`);
-  }
+  })
+} catch (error) {
+  console.error(`Ошибка: ${error}`);
+}
 }
 main();

@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: 652px;
+  box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+}
+
+.description {
+  padding: 22px 97px 62px 31px;
+}
+
+.heading {
+  max-width: 200px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 42px;
+}
+.description-text {
+  font-weight: 400;
+  font-size: 22px;
+  color: #575757;
+}
+
+.price-span {
+  color: #ef5b70;
+}
+
+.grey-span {
+  color: #6f6e6e;
+}
+
+input {
+  width: 44px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #656565;
+  text-align: center;
+  padding-left: 16px;
+}
+
+.description-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.delete-button {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}

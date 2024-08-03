@@ -1,0 +1,38 @@
+[
+  {
+    "id" : 1,
+    "price": 300,
+    "color": "Red",
+    "size": "Xl",
+    "count": 2,
+    "img": "/Lesson11/img/pic1.png",
+    "title": "MANGO  PEOPLE  T-SHIRT"
+  },
+  {
+    "id" : 2,
+    "price": 52,
+    "color": "Black",
+    "size": "Xl",
+    "count": 1,
+    "img": "/Lesson11/img/pic2.png",
+    "title": "ELLERY X M'O CAPSULE"
+  },
+  {
+    "id" : 1,
+    "price": 300,
+    "color": "Red",
+    "size": "Xl",
+    "count": 2,
+    "img": "/Lesson11/img/pic1.png",
+    "title": "MANGO  PEOPLE  T-SHIRT"
+  },
+  {
+    "id" : 2,
+    "price": 52,
+    "color": "Black",
+    "size": "Xl",
+    "count": 1,
+    "img": "/Lesson11/img/pic2.png",
+    "title": "ELLERY X M'O CAPSULE"
+  }
+]

@@ -136,8 +136,8 @@ form.addEventListener('submit', (e) => {
     if (element.classList.contains('error')) {
       isValidOrNo = false;
     };
-    if (!isValidOrNo) {
-      e.preventDefault();
-    };
   }); // проверка при отправке формы
+  if (!isValidOrNo) {
+    e.preventDefault();
+  };
 });
