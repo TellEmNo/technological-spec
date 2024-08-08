@@ -40,30 +40,32 @@ document.addEventListener('DOMContentLoaded', async (e) => {
 function addToCart(event) {
 	const itemId = event.target.dataset.id;
 	const item = cart.find((item) => item.id == itemId);
-
 	if (item) {
 		item.count++;
 	} else {
-		const itemData = findItemById(itemId);
-		cart.push({...itemData, count: 1});
+		const itemData = getItemData(item, itemId);
+		cart.push({ ...itemData, count: 1 });
 	}
 
 	renderCart();
 }
 
 async function getItemData(item, id) {
-	const allItems = [...document.querySelectorAll('.list-items__item')];
-	const item = allItems.find(i => i.querySelector('.add-to-cart-btn').dataset.id == id);
+	// const allItems = [...document.querySelectorAll('.list-items__item')];
+	// const item = allItems.find(i => i.querySelector('.add-to-cart-btn').dataset.id == id);
 	const data = await getData(url);
-	const itemData = data.find((item) => item.id === id);
-	
-	if (!itemData) {
-		throw new Error('Item not found');
-	}
+	const itemData = data.find((i) => i.id === id);
 
+	// if (!itemData) {
+	// throw new Error('Item not found');
+	// }
+	// 
+	console.log(data);
+	console.log(itemData);
+	console.log(id);
 	return {
 		id: id,
-		img: item.querySelector('.item__img').style.backgroundImage,
+		img: item.querySelector('.item__img').style.backgroundImage.slice(5, -2),
 		title: item.querySelector('.item__description h3').textContent,
 		price: item.querySelector('.item__description span').textContent,
 		color: itemData.color,
@@ -71,3 +73,31 @@ async function getItemData(item, id) {
 		quantity: itemData.quantity
 	};
 };
+
+function renderCart() {
+	const cartSection = document.querySelector('.cart-items');
+	const cartWrapper = document.querySelector('.cart-items__wrapper');
+	cartWrapper.innerHTML = '';
+
+	cart.forEach(item => {
+		const cartItemHTML = `
+      <div class="cart-item">
+        <img src="${item.img}" alt="${item.title}">
+        <div class="cart-item__details">
+          <h4>${item.title}</h4>
+          <p>${item.price}</p>
+          <p>${item.color}</p>
+          <p>${item.size}</p>
+          <span>Quantity: ${item.count}</span>
+        </div>
+      </div>`;
+
+		cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML);
+	});
+
+	if (cart.length > 0) {
+		cartSection.style.display = 'block';
+	} else {
+		cartSection.style.display = 'none';
+	}
+}
