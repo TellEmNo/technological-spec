@@ -1,0 +1,45 @@
+body {
+  transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
+  }
+  
+  body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+  }
+  
+  body.dark-theme {
+  background-color: #000000;
+  color: #ffffff;
+  }
+  
+  .theme-switcher-container {
+  margin-bottom: 20px;
+  }
+  
+  .repos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  }
+  
+  .repo-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fav-button {
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  }
+  
+  .fav-button.favourited {
+  background-color: #28a745;
+  }

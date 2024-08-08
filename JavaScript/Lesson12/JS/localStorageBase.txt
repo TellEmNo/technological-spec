@@ -1,0 +1,11 @@
+// localStorage.setItem('user', 'sad');
+console.log(localStorage.getItem('user'));
+localStorage.removeItem('user');
+localStorage.setItem('user1', 'sad');
+localStorage.setItem('user2', 'happy');
+// localStorage.clear();
+localStorage.admin = JSON.stringify({
+  name: 'Vladislav',
+  age: 27
+}) // localStorage не поддерживает объекты, поэтому мы приводим его к строке.
+console.log(JSON.parse(localStorage.admin));
