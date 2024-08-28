@@ -131,7 +131,7 @@ greeting();
 const createPasswordChecker = (length) => {
   return (password) => {
     return password.length === length ? true : false;
-  };  
+  };
 };
 
 const isPasswordValid = createPasswordChecker(8);
@@ -155,3 +155,53 @@ const sumDigits = (num) => {
 };
 
 console.log(sumDigits(456789));
+
+// Homework 1
+// 1) Дан массив const arr = [1, 5, 7, 9] с помощью Math.min и spread оператора, найти минимальное число в массиве, решение задание должно состоять из одной строки
+
+const arrForMin = [1, 5, 7, 9];
+console.log(Math.min(...arrForMin));
+
+// 2) Напишите функцию createCounter, которая создает счетчик и возвращает объект с двумя методами: increment и decrement. Метод increment должен увеличивать значение счетчика на 1, а метод decrement должен уменьшать значение счетчика на 1. Значение счетчика должно быть доступно только через методы объекта, а не напрямую.
+
+const createCounter = () => {
+  let value = 0;
+  return {
+    increment: () => {
+      value += 1;
+    },
+    decrement: () => {
+      value -= 1;
+    },
+    getValue: () => {
+      return value;
+    }
+  };
+};
+
+const counter = createCounter();
+counter.increment();
+counter.increment();
+counter.increment();
+counter.increment();
+counter.increment();
+counter.decrement();
+console.log(counter.getValue());
+
+// 3) Напишите рекурсивную функцию findElementByClass, которая принимает корневой элемент дерева DOM и название класса в качестве аргументов и возвращает первый найденный элемент с указанным классом в этом дереве.
+
+const findElementByClass = (root, className) => {
+  if (root.classList && root.classList.contains(className)) {
+    return root;
+  } else {
+    for (let i = 0; i < root.children.length; i++) {
+      const element = findElementByClass(root.children[i], className);
+      if (element) {
+        return element;
+      }
+    }
+  }
+};
+
+// console.log(findElementByClass(document.body, 'body'));
+console.log(findElementByClass(document.body, 'wrapper'));
