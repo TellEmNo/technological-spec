@@ -1,0 +1,11 @@
+{
+  "name": "Generate_password_from_8_to_16",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Vladislav Verin",
+  "license": "ISC",
+  "description": "Generate password"
+}
