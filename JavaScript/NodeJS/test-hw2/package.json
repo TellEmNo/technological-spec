@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "generate-password-from-8-to-16": "^1.1.0"
+  },
+  "name": "test-hw2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
