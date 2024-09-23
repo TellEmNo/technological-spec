@@ -1,0 +1,16 @@
+{
+  "name": "homework3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.0",
+    "fs": "^0.0.1-security"
+  }
+}
