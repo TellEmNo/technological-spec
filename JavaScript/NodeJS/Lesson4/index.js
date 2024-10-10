@@ -26,7 +26,9 @@ const readDataFromFile = () => {
 };
 
 const writeDataToFile = (data) => {
-  fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2), 'utf8');
+  if (!fs.existsSync(dataFilePath)) {
+    fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2), 'utf8');
+  }
 };
 
 app.get('/users', (req, res) => {
@@ -43,8 +45,8 @@ app.get('/users/:id', (req, res) => {
   if (user) {
     res.send({ user });
   } else {
-    res.sendStatus(404);
     res.send({ user: null })
+    res.sendStatus(404);
   }
 });
 
@@ -87,14 +89,14 @@ app.put('/users/:id', (req, res) => {
     writeDataToFile(users);
     res.send({ user: users[userIndex] });
   } else {
-    res.sendStatus(404);
     res.send({ user: null })
+    res.sendStatus(404);
   }
 });
 
 app.delete('/users/:id', (req, res) => {
   const userId = +req.params.id;
-  const users = readDataFromFile
+  const users = readDataFromFile();
   const userIndex = users.findIndex(user => user.id === userId); 
 
   if (userIndex !== -1) {
@@ -102,8 +104,8 @@ app.delete('/users/:id', (req, res) => {
     writeDataToFile(users);
     res.sendStatus(200);
   } else {
-    res.sendStatus(404);
     res.send({ user: null })
+    res.sendStatus(404);
   }
 });
 

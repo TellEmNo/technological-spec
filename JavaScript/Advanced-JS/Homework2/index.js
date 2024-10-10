@@ -122,10 +122,13 @@ const addReview = () => {
   document.querySelector('.add-review').addEventListener('click', () => {
     const input = document.querySelector('.review').value;
     const itemList = document.querySelector('.item-list');
-    const previousError = document.querySelector('.message .error');
-    if (previousError) {
-      previousError.remove();
-    }
+    const messageDiv = document.querySelector('.message');
+    // const lengthError = document.querySelector('.message .error');
+    // if (lengthError) {
+    //   lengthError.remove();
+    // }
+    messageDiv.innerHTML = '';
+    
     try {
       if (input.length < 50 || input.length > 500) {
         throw new Error('Длина введенного значения должна быть от 50 до 500 символов.');

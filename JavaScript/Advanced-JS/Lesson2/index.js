@@ -167,6 +167,10 @@ document.querySelector('.check-button').addEventListener('click', () => {
   }
 });
 
+// Пользователи вашего сайта могут добавлять элементы в список. Но есть условие:
+// введенное значение должно содержать от 3 до 10 символов.
+
+
 document.querySelector('.add-button').addEventListener('click', () => {
   const input = document.querySelector('.item-input').value;
   const itemList = document.querySelector('.item-list');
