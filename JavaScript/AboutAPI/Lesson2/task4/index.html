@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .quiz {
+        margin-bottom: 20px;
+      }
+
+      .options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .options label {
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+      .result {
+        font-weight: bold;
+        margin-top: 20px;
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="quiz">
+      <p>Вопрос 1: Какой ваш любимый цвет?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="q1" value="синий"> Синий
+        </label>
+        <label>
+          <input type="radio" name="q1" value="зеленый"> Зеленый
+        </label>
+        <label>
+          <input type="radio" name="q1" value="красный"> Красный
+        </label>
+      </div>
+    </section>
+    <section class="quiz">
+      <p>Вопрос 2: Какое ваше любимое животное?</p>
+      <div class="options">
+        <label>
+          <input type="radio" name="q2" value="кот"> Кот
+        </label>
+        <label>
+          <input type="radio" name="q2" value="собака"> Собака
+        </label>
+        <label>
+          <input type="radio" name="q2" value="попугай"> Попугай
+        </label>
+      </div>
+    </section>
+    <button id="submit">Завершить опрос</button>
+
+    <div class="result" style="display: none;">
+      <p>Ваш результат:</p>
+      <p id="result-q1"> Вопрос 1: <span></span></p> 
+      <p id="result-q2"> Вопрос 2: <span></span></p>
+    </div>
+  </body>
+</html>

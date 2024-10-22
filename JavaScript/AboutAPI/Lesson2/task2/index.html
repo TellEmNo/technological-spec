@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+      .modal {
+        position: fixed;
+        z-index: 1;
+        left: 25%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 800px;
+        height: 600px;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+      .modal.show {
+        opacity: 1;
+        visibility: visible;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+      }
+      .overlay.show {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="open-modal-btn">Открыть модальное окно</button>
+
+    <div class="overlay"></div>
+    <div class="modal">
+      <h2>Модальное окно</h2>
+      <p>Нажмите кнопку "Закрыть", чтобы закрыть окно</p>
+      <button class="close-modal-btn">Закрыть</button>
+    </div>
+  </body>
+</html>
