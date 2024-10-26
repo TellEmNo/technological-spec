@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  max-width: 600px;
+}
+
+.photo-box {
+  position: relative;
+  margin: 20px 0;
+}
+
+.photo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.photographer {
+  font-size: 18px;
+  color: #333;
+}
+
+.like-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #ff5a5a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.likes-count {
+  font-size: 20px;
+  color: #333;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history img {
+  width: 100%;
+  border-radius: 5px;
+}
