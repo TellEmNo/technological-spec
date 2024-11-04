@@ -1,0 +1,16 @@
+.titleTimer {
+  font-size: 50px;
+  color: #f1fa70;
+}
+
+.resetButton {
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #61dafb;
+  color: #61dafb;
+}
+
+span {
+  color: #61dafb;
+}

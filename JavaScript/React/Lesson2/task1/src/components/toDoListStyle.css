@@ -1,0 +1,22 @@
+.titleToDo {
+  color: #61dafb;
+}
+
+.toDoButton {
+  color: #61dafb;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #61dafb;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #61dafb;
+}
+
+ul {
+  color: #f1fa70;
+}

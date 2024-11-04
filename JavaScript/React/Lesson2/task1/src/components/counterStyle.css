@@ -1,0 +1,22 @@
+.counter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #f1fa70;
+}
+
+.counter {
+  font-size: 50px;
+}
+
+.button {
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #61dafb;
+  color: #61dafb;
+  background-color: #ffffff;
+  cursor: pointer;
+}

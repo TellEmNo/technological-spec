@@ -1,0 +1,16 @@
+.text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #f1fa70;
+  height: 40px;
+}
+
+input {
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  padding: 10px;
+  color: #61dafb;
+}
