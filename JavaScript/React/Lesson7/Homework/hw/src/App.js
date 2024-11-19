@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { loadTasks } from './actions/taskActions';
 
-function App() {
+const App = () => {
+  const dispatch = useDispatch();
+
+  const { tasks, loading, error } = useSelector((state) => state.tasks);
+
+  // Диспатчим асинхронное действие при монтировании компонента
+  useEffect(() => {
+    dispatch(loadTasks());
+  }, [dispatch]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Список задач</h1>
+
+      {loading && <p>Загрузка...</p>}
+      {error && <p style={{ color: 'red' }}>Ошибка: {error}</p>}
+
+      {!loading && !error && tasks.length > 0 && (
+        <ul>
+          {tasks.map((task) => (
+            <li key={task.id}>
+              <span>{task.title}</span>
+              <span>{task.completed ? '✔️' : '❌'}</span>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
-}
+};
 
 export default App;

@@ -34,7 +34,7 @@ function EditProduct() {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(updateProduct({
-      id: productId,
+      id: Number(productId),
       name,
       description,
       price: Number(price),
