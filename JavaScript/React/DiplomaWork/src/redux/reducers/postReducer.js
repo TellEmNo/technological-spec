@@ -1,3 +1,4 @@
+// src/redux/reducers/postReducer.js
 const initialState = {
   posts: [],
   loading: false,

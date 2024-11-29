@@ -10,7 +10,7 @@ const PostForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     if (title.trim() && body.trim()) {
       const newPost = {
         id: Date.now(),  // Уникальный id
@@ -36,6 +36,8 @@ const PostForm = () => {
         label="Body"
         variant="outlined"
         fullWidth
+        multiline
+        rows={4}
         value={body}
         onChange={(e) => setBody(e.target.value)}
       />

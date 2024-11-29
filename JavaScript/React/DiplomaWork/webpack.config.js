@@ -27,6 +27,7 @@ module.exports = {
     }),
   ],
   devServer: {
+    historyApiFallback: true,
     static: './dist',  // Указываем папку с файлами для сервера
     port: 3000,  // Порт для локального сервера
   },
