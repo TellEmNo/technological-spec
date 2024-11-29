@@ -1,11 +1,10 @@
-// src/redux/reducers/rootReducer.js
 import { combineReducers } from 'redux';
 import postReducer from './postReducer';
-import updatePostReducer from './updatePostReducer'; // Подключаем редьюсер для обновления поста
+import updatePostReducer from './updatePostReducer';
 
 const rootReducer = combineReducers({
   posts: postReducer,
-  updatedPost: updatePostReducer,  // Добавляем редьюсер для обновления поста
+  updatedPost: updatePostReducer,
 });
 
 export default rootReducer;

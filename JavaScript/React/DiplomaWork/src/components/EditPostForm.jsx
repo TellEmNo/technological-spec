@@ -6,15 +6,15 @@ const EditPostForm = ({ post, onUpdate, open, handleClose }) => {
   const [updatedBody, setUpdatedBody] = useState(post.body);
 
   const handleUpdate = () => {
-    const updatedPost = { ...post, title: updatedTitle, body: updatedBody }; // Включаем ID в обновленный объект
-    onUpdate(updatedPost); // Передаем целый обновленный объект
-    handleClose(); // Закрываем модальное окно после обновления
+    const updatedPost = { ...post, title: updatedTitle, body: updatedBody };
+    onUpdate(updatedPost);
+    handleClose();
   };
 
   return (
     <Modal
-      open={open} // Управляем видимостью модала через open
-      onClose={handleClose} // Закрываем модал при клике вне его
+      open={open}
+      onClose={handleClose}
       aria-labelledby="edit-post-modal"
       aria-describedby="edit-post-description"
     >

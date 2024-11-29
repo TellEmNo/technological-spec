@@ -1,4 +1,3 @@
-// src/redux/reducers/updatePostReducer.js
 const initialState = {
   posts: [],
   loading: false,
@@ -15,7 +14,7 @@ const updatePostReducer = (state = initialState, action) => {
           post.id === action.payload.id ? action.payload : post
         );
         if (updatedPosts.length > 0) {
-          localStorage.setItem('posts', JSON.stringify(updatedPosts));  // Сохраняем обновленные посты в localStorage
+          localStorage.setItem('posts', JSON.stringify(updatedPosts));
         }
         return {
           ...state,

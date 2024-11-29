@@ -13,11 +13,11 @@ const PostForm = () => {
   
     if (title.trim() && body.trim()) {
       const newPost = {
-        id: Date.now(),  // Уникальный id
+        id: Date.now(),
         title,
         body,
       };
-      dispatch(addPost(newPost));  // Добавляем новый пост
+      dispatch(addPost(newPost));
       setTitle('');
       setBody('');
     }

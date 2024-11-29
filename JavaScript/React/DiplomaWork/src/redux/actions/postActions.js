@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+// В Thunk ошибки обрабатываются внутри асинхронной функции с помощью try-catch
 export const fetchPostsRequest = (limit = 10) => {
   return async (dispatch) => {
     dispatch({ type: 'FETCH_POSTS_REQUEST' });

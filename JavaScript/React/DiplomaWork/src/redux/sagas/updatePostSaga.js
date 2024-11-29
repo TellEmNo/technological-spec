@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
 import axios from 'axios';
-import { updatePost, updatePostFailure } from '../actions/updatePostActions'; // Используем updatePost
+import { updatePost, updatePostFailure } from '../actions/updatePostActions';
 
 function* updatePostSaga(action) {
   try {
@@ -9,9 +9,9 @@ function* updatePostSaga(action) {
       `https://jsonplaceholder.typicode.com/posts/${action.payload.postId}`,
       action.payload.updatedData
     );
-    yield put(updatePost(response.data)); // Отправляем обновленные данные
+    yield put(updatePost(response.data));
   } catch (error) {
-    yield put(updatePostFailure(error.message)); // Если ошибка, диспатчим updatePostFailure
+    yield put(updatePostFailure(error.message));
   }
 }
 
