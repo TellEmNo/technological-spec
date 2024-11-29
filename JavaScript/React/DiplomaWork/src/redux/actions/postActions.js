@@ -5,7 +5,8 @@ export const fetchPostsRequest = (limit = 10) => {
   return async (dispatch) => {
     dispatch({ type: 'FETCH_POSTS_REQUEST' });
     try {
-      const response = await axios.get(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}`);
+      const response = await 
+      axios.get(`https://jsonplaceholder.typicode.com/posts?_limit=${limit}`);
       dispatch(fetchPostsSuccess(response.data));
     } catch (error) {
       dispatch(fetchPostsFailure(error.message));
